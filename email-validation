@@ -1,0 +1,37 @@
+
+# rustic program to check if given email-id is valid or not!
+
+email-id=input("give the email \n");
+
+t=0
+if len(email-id)>=6: 
+    if email-id[0].isalpha():
+        if (email-id.count("@")==1):
+            if (email-id[-4]==".") or (email-id[-3]=="."):
+                if (email-id[-1]=="m") and (email-id[-5]!="@") or (email-id[-1]=="n") and (email-id[-4]!="@"):
+                 for i in email-id:
+                    if i.isspace():
+                        print("space is not allowed in email...")
+                        t=1
+                        break
+                    
+                 if t==0:
+                    print("email accepted... ")
+
+                else:
+                    print("inappropriate email...");
+              
+            else:
+             print("jfj");
+        else:
+         print("inappropriate no. of @");
+    else:
+     print("wrong email 2");       
+else: 
+    print("email dosent have enough length ");
+
+
+
+
+
+# a@b.in
