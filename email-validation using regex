@@ -1,0 +1,11 @@
+import re
+
+condition="^[a-z]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"        #regex condition for valid email
+
+email=input("enter your email\n")
+
+if re.search(condition,email):
+    print("valid email\n")
+
+else:
+    print("wrong email...")
