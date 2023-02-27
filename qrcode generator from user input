@@ -1,0 +1,8 @@
+import qrcode
+from PIL import Image
+
+str=input("enter the link or text you wish to convert into QR\n")
+
+
+img=qrcode.make(str)
+img.save("user-input.jpeg")
